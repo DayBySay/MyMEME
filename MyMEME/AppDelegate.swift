@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import MEMELib
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let appId = "556910271856232";
+    let appSecret = "0mb7a16n2pdbcdt2805wgz0jgwx4gd5p";
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch
+        MEMELib.setAppClientId(appId, clientSecret: appSecret)
         return true
     }
 

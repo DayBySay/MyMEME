@@ -7,21 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195004CE21042C4E0085F5E0 /* MEMELib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19BA5BA521031CAD00909A7F /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		195004D021042C560085F5E0 /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BA5BA521031CAD00909A7F /* MEMELib.framework */; };
+		195004D221042F240085F5E0 /* MemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195004D121042F240085F5E0 /* MemeTableViewController.swift */; };
 		19BA5B9421031C9000909A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA5B9321031C9000909A7F /* AppDelegate.swift */; };
-		19BA5B9621031C9000909A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA5B9521031C9000909A7F /* ViewController.swift */; };
 		19BA5B9921031C9000909A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BA5B9721031C9000909A7F /* Main.storyboard */; };
 		19BA5B9B21031C9300909A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19BA5B9A21031C9300909A7F /* Assets.xcassets */; };
 		19BA5B9E21031C9300909A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BA5B9C21031C9300909A7F /* LaunchScreen.storyboard */; };
+		19BA5BA921031CBB00909A7F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BA5BA821031CBB00909A7F /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		195004CF21042C4E0085F5E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				195004CE21042C4E0085F5E0 /* MEMELib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		195004D121042F240085F5E0 /* MemeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeTableViewController.swift; sourceTree = "<group>"; };
 		19BA5B9021031C9000909A7F /* MyMEME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMEME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BA5B9321031C9000909A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19BA5B9521031C9000909A7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19BA5B9821031C9000909A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19BA5B9A21031C9300909A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19BA5B9D21031C9300909A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19BA5B9F21031C9300909A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19BA5BA521031CAD00909A7F /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MEMELib.framework; sourceTree = "<group>"; };
+		19BA5BA821031CBB00909A7F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BA5BA921031CBB00909A7F /* CoreBluetooth.framework in Frameworks */,
+				195004D021042C560085F5E0 /* MEMELib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,7 @@
 			children = (
 				19BA5B9221031C9000909A7F /* MyMEME */,
 				19BA5B9121031C9000909A7F /* Products */,
+				19BA5BA721031CBB00909A7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +76,23 @@
 		19BA5B9221031C9000909A7F /* MyMEME */ = {
 			isa = PBXGroup;
 			children = (
+				19BA5BA521031CAD00909A7F /* MEMELib.framework */,
 				19BA5B9321031C9000909A7F /* AppDelegate.swift */,
-				19BA5B9521031C9000909A7F /* ViewController.swift */,
+				195004D121042F240085F5E0 /* MemeTableViewController.swift */,
 				19BA5B9721031C9000909A7F /* Main.storyboard */,
 				19BA5B9A21031C9300909A7F /* Assets.xcassets */,
 				19BA5B9C21031C9300909A7F /* LaunchScreen.storyboard */,
 				19BA5B9F21031C9300909A7F /* Info.plist */,
 			);
 			path = MyMEME;
+			sourceTree = "<group>";
+		};
+		19BA5BA721031CBB00909A7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19BA5BA821031CBB00909A7F /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +105,7 @@
 				19BA5B8C21031C9000909A7F /* Sources */,
 				19BA5B8D21031C9000909A7F /* Frameworks */,
 				19BA5B8E21031C9000909A7F /* Resources */,
+				195004CF21042C4E0085F5E0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +128,11 @@
 				TargetAttributes = {
 					19BA5B8F21031C9000909A7F = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BA5B9621031C9000909A7F /* ViewController.swift in Sources */,
+				195004D221042F240085F5E0 /* MemeTableViewController.swift in Sources */,
 				19BA5B9421031C9000909A7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +319,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FRJG63497R;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyMEME",
+				);
 				INFOPLIST_FILE = MyMEME/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +342,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FRJG63497R;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyMEME",
+				);
 				INFOPLIST_FILE = MyMEME/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
